@@ -1,5 +1,5 @@
 //start work on 2.10  Authentication
-const { join } = require('lodash');
+//const { join } = require('lodash');
 
 // This is the server file for task 2.8 with mongoose with real database 
 const express = require('express');
@@ -242,7 +242,7 @@ app.get('/users/id/:ID', passport.authenticate('jwt', { session: false }), (req,
 });
 
 
-//Get all movie
+//Get all movies
 app.get('/movies', passport.authenticate('jwt', { session: false }), (req, res) => {
   Movies.find()
     .then((Movies) => {
