@@ -62,6 +62,7 @@ mongoose.connect('process.env.CONNECTION_URI', { useNewUrlParser: true, useUnifi
   .then(() => console.log('connected to db'))
   .catch( (err) => console.log(err));
 
+  
 app.get('/', (req, res) => {
   res.send('<h1>Hello Movies server  </h1>')
 })
