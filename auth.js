@@ -10,6 +10,6 @@ let generateJWTToken = (user) => {
         expiresIn: '7d',
         algorithm: 'HS256'
     });
-7
 
-const jwtSecret2 = 'your_jwt_secret'; // This has to be the same key used in the JWTStrategy
+
+const jwtSecret2 = 'your_jwt_secret'; 
