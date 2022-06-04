@@ -10,6 +10,4 @@ let generateJWTToken = (user) => {
         expiresIn: '7d',
         algorithm: 'HS256'
     });
-
-
-const jwtSecret2 = 'your_jwt_secret'; 
+}
